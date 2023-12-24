@@ -57,7 +57,7 @@ function App() {
     <>
       <div className="wrapper">
         <div className="content">
-          <h1>Узнать множетели числа</h1>
+          <h1>Узнать множители числа</h1>
           <p>Введите число:</p>
           <input type="number" id='input'/>
           <button type="submit" id='submit' onClick={handleClick}>Отправить</button>
