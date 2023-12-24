@@ -1,0 +1,76 @@
+/* Fonts */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../public/fonts/lora-v32-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../public/fonts/lora-v32-cyrillic_latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../public/fonts/lora-v32-cyrillic_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../public/fonts/lora-v32-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+html{
+  background: url('../public/2111.w039.n003.5B.p1.5.jpg') no-repeat ;
+  background-size: cover;
+
+  .wrapper{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    .content{
+      background-color: #fa8846;
+      margin: auto;
+      border-radius: 5px;
+      padding: 25px;
+      font-family: 'Lora';
+      h1{
+        text-align: center;
+        font-family: 'Lora';
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 10px;
+
+      }
+      p{
+        font-family: 'Lora';
+        font-weight: 500;
+      }
+      button{
+        background-color: #6558D7;
+        margin-left: 5px;
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+        color: white;
+      }
+      input{
+        border: 2px solid black;
+        background: lightgray;
+
+      }
+    }
+  }
+}
+
+  
