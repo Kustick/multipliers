@@ -17,6 +17,7 @@ function App() {
   }
   const takeMnoz = (value) =>{
     const mnoz = [];
+    let i = 2;
     if (value === 0){
       value += 1
     }
@@ -24,33 +25,17 @@ function App() {
       value = value * -1
     }
     if (value === 1){
-      mnoz.push('Некоректное число')
+      mnoz.push(1)
     }
-    while (value % 2 === 0) {
-      mnoz.push(2);
-      value = value / 2;
+    while(value !== 1){
+      if(value % i === 0){
+        mnoz.push(i);
+        value = value / i;
+      } 
+      else{
+        i += 1
+      }
     }
-  
-    while (value % 3 === 0) {
-      mnoz.push(3);
-      value = value / 3;
-    }
-  
-    while (value % 5 === 0) {
-      mnoz.push(5);
-      value = value / 5;
-    }
-  
-    while (value % 7 === 0) {
-      mnoz.push(7);
-      value = value / 7;
-    }
-    while (value > 1){
-      mnoz.push(value)
-      value = 0
-    }
-    
-
     return mnoz;
   }
   return (
